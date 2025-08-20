@@ -1,0 +1,202 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+:root {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  color: #ffffff;
+}
+
+/* Custom Bootstrap theme overrides */
+:root {
+  --bs-primary: #2563eb;
+  --bs-primary-rgb: 37, 99, 235;
+  --bs-secondary: #6b7280;
+  --bs-secondary-rgb: 107, 114, 128;
+  --bs-success: #10b981;
+  --bs-success-rgb: 16, 185, 129;
+  --bs-danger: #ef4444;
+  --bs-danger-rgb: 239, 68, 68;
+  --bs-warning: #f59e0b;
+  --bs-warning-rgb: 245, 158, 11;
+  --bs-info: #3b82f6;
+  --bs-info-rgb: 59, 130, 246;
+  --bs-dark: #1f2937;
+  --bs-dark-rgb: 31, 41, 55;
+  --bs-body-bg: #0f172a;
+  --bs-body-color: #ffffff;
+}
+
+/* Custom card styling */
+.card-custom {
+  background-color: #1f2937;
+  border: 1px solid #374151;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.card-custom .card-body {
+  padding: 1.5rem;
+}
+
+/* Custom button styles */
+.btn-primary-custom {
+  background-color: #2563eb;
+  border-color: #2563eb;
+  color: white;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s;
+}
+
+.btn-primary-custom:hover {
+  background-color: #1d4ed8;
+  border-color: #1d4ed8;
+  color: white;
+}
+
+.btn-secondary-custom {
+  background-color: #4b5563;
+  border-color: #4b5563;
+  color: white;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s;
+}
+
+.btn-secondary-custom:hover {
+  background-color: #374151;
+  border-color: #374151;
+  color: white;
+}
+
+/* Custom form controls */
+.form-control-custom {
+  background-color: #374151;
+  border: 1px solid #4b5563;
+  border-radius: 0.5rem;
+  color: white;
+  padding: 0.5rem 0.75rem;
+}
+
+.form-control-custom:focus {
+  background-color: #374151;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 0.2rem rgba(37, 99, 235, 0.25);
+  color: white;
+}
+
+.form-control-custom::placeholder {
+  color: #9ca3af;
+}
+
+/* Custom text colors */
+.text-gray-400 {
+  color: #9ca3af !important;
+}
+
+.text-gray-300 {
+  color: #d1d5db !important;
+}
+
+.text-gray-500 {
+  color: #6b7280 !important;
+}
+
+/* Custom background colors */
+.bg-gray-900 {
+  background-color: #111827 !important;
+}
+
+.bg-gray-800 {
+  background-color: #1f2937 !important;
+}
+
+.bg-gray-750 {
+  background-color: #273142 !important;
+}
+
+.bg-gray-700 {
+  background-color: #374151 !important;
+}
+
+/* Hover effects */
+.hover-bg-gray-750:hover {
+  background-color: #273142 !important;
+}
+
+/* Animation classes */
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-roll {
+  animation: roll 2s ease-in-out infinite;
+}
+
+@keyframes roll {
+  0%, 100% { 
+    transform: translateX(0) rotate(0deg); 
+  }
+  50% { 
+    transform: translateX(20px) rotate(180deg); 
+  }
+}
+
+/* Custom spacing utilities */
+.space-y-8 > * + * {
+  margin-top: 2rem;
+}
+
+.space-y-6 > * + * {
+  margin-top: 1.5rem;
+}
+
+.space-y-4 > * + * {
+  margin-top: 1rem;
+}
+
+.space-y-3 > * + * {
+  margin-top: 0.75rem;
+}
+
+.space-y-2 > * + * {
+  margin-top: 0.5rem;
+}
+
+.space-x-4 > * + * {
+  margin-left: 1rem;
+}
+
+.space-x-3 > * + * {
+  margin-left: 0.75rem;
+}
+
+.space-x-2 > * + * {
+  margin-left: 0.5rem;
+}
+
+/* Responsive utilities */
+@media (max-width: 767.98px) {
+  .space-y-8 > * + * {
+    margin-top: 1.5rem;
+  }
+}
